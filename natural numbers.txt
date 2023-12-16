@@ -1,0 +1,482 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    int i;
+   
+    cout << "Alphabets from (A-Z) are:\n";
+   
+    // ASCII value of A=65 and Z=90
+    for (i = 65; i <= 90; i++) {
+        // Integer i with %c will be converted to character
+        // before printing.%c will takes its equivalent
+        // character value
+        cout << (char)i << " ";
+    }
+ 
+    cout << "\nAlphabets from (a-z) are:\n";
+ 
+    // ASCII value of a=97 and z=122
+    for (i = 97; i <= 122; i++) {
+        // Integer i with %c will be converted to character
+        // before printing.%c will takes its equivalent
+        // character value
+        cout << (char)i << " ";
+    }
+    return 0;
+}
+Learn Data Structures & Algorithms with GeeksforGeeks
+Output
+Alphabets from (A-Z) are:
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+Alphabets from (a-z) are:
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program to print (A to Z) and (a to z) using for loop
+In the below program,
+
+For loop is used to print the alphabets from A to Z. A loop variable is taken to do this of type ‘char’. 
+The loop variable ‘i’ is initialized with the first alphabet ‘A’ and incremented by 1 on every iteration.
+In the loop, the character ‘i’ is printed as the alphabet.
+Program: 
+
+
+// C++ program to find the print
+// Alphabets from A to Z
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    // Declare the variables
+    char i;
+ 
+    // Display the alphabets
+    cout << "The Alphabets from A to Z are: \n";
+ 
+    // Traverse each character
+    // with the help of for loop
+    for (i = 'A'; i <= 'Z'; i++) {
+        // Print the alphabet
+        cout << i << " ";
+    }
+    // Display the alphabets
+    cout << "\nThe Alphabets from a to z are: \n";
+    for (i = 'a'; i <= 'z'; i++) {
+        // Print the alphabet
+        cout << i << " ";
+    }
+ 
+    return 0;
+}
+Learn Data Structures & Algorithms with GeeksforGeeks
+Output
+The Alphabets from A to Z are: 
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+The Alphabets from a to z are: 
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program to print (A to Z) and (a to z) using the while loop
+In the below program,
+
+While loop is used to print the alphabets from A to Z. A loop variable is taken to display of type ‘char’. 
+The loop variable ‘i’ is initialized with the first alphabet ‘A’ and incremented by 1 on every iteration.
+In the loop, the character ‘i’ is printed as the alphabet.
+// C++ program to find the print
+// Alphabets from A to Z
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    // Declare the variables
+    char i;
+ 
+    // Display the alphabets
+    cout << "The Alphabets from A to Z are: \n";
+ 
+    // Traverse each character
+    // with the help of while loop
+    i = 'A';
+ 
+    while (i <= 'Z') {
+        cout << i << ' ';
+        i++;
+    }
+    // Display the alphabets
+    i = 'a';
+ 
+    cout << "\nThe Alphabets from a to z are: \n";
+ 
+    while (i <= 'z') {
+        cout << i << ' ';
+        i++;
+    }
+ 
+    return 0;
+}
+Learn Data Structures & Algorithms with GeeksforGeeks
+Output
+The Alphabets from A to Z are: 
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+The Alphabets from a to z are: 
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program to print (A to Z) and (a to z) using a do-while loop
+In the below program,
+
+The do-while loop is used to print the alphabets from A to Z. A loop variable is taken to display of type ‘char’. 
+The loop variable ‘i’ is initialized with the first alphabet ‘A’ and incremented by 1 on every iteration.
+In the loop, the character ‘i’ is printed as the alphabet.
+
+// C++ program to find the print
+// Alphabets from A to Z
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    // Declare the variables
+    char i;
+ 
+    // Display the alphabets
+    cout << "The Alphabets from A to Z are: \n";
+ 
+    // Traverse each character
+    // with the help of while loop
+    i = 'A';
+ 
+    do{
+        cout << i << ' ';
+        i++;
+    }while (i <= 'Z');
+    // Display the alphabets
+    i = 'a';
+ 
+    cout << "\nThe Alphabets from a to z are: \n";
+ 
+    do{
+        cout << i << ' ';
+        i++;
+    }while (i <= 'z');
+ 
+    return 0;
+}
+Learn Data Structures & Algorithms with GeeksforGeeks
+Output
+The Alphabets from A to Z are: 
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+The Alphabets from a to z are: 
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Feeling lost in the world of random DSA topics, wasting time without progress? It's time for a change! Join our DSA course, where we'll guide you on an exciting journey to master DSA efficiently and on schedule.
+Ready to dive in? Explore our Free Demo Content and join our DSA course, trusted by over 100,000 geeks!
+DSA in C++
+DSA in Java
+DSA in Python
+DSA in JavaScript
+
+Last Updated : 13 Dec, 2023
+
+8
+
+Previous
+C Program for Min Cost Path
+Next
+Program to find Prime Numbers Between given Interval
+Similar Reads
+Count of ways to rearrange N digits and M alphabets keeping all alphabets together
+Program to print the Alphabets of a Given Word using * pattern
+Program to Print K using Alphabets
+Time taken by Loop unrolling vs Normal loop
+Time Complexity of a Loop when Loop variable “Expands or Shrinks” exponentially
+Python Program for Print Number series without using any loop
+C Program to print Fibonacci Series without using loop
+C Program to Print Number series without using any loop
+Count and Print the alphabets having ASCII value in the range [l, r]
+Count and Print the alphabets having ASCII value not in the range [l, r]
+Complete Tutorials
+Learn Algorithms with Javascript | DSA using JavaScript Tutorial
+DSA Crash Course | Revision Checklist with Interview Guide
+Learn Data Structures and Algorithms | DSA Tutorial
+Coding For Kids - Online Free Tutorial to Learn Coding
+Mathematical and Geometric Algorithms - Data Structure and Algorithm Tutorials
+R
+
+RishabhPrabhu
+Article Tags :
+school-programming 
+C Programs 
+DSA
+Additional Information
+Courses
+course-img
+113k+ interested Geeks
+Master C Programming with Data Structures
+Explore
+course-img
+155k+ interested Geeks
+Master C++ Programming - Complete Beginner to Advanced
+Explore
+course-img
+1097k+ interested Geeks
+Data Structures and Algorithms - Self Paced
+Explore
+geeksforgeeks-footer-logo
+A-143, 9th Floor, Sovereign Corporate Tower, Sector-136, Noida, Uttar Pradesh - 201305
+GFG App on Play Store
+GFG App on App Store
+Company
+About Us
+Legal
+Careers
+In Media
+Contact Us
+Advertise with us
+GFG Corporate Solution
+Placement Training Program
+Apply for Mentor
+Explore
+Job-A-Thon Hiring Challenge
+Hack-A-Thon
+GfG Weekly Contest
+Offline Classes (Delhi/NCR)
+DSA in JAVA/C++
+Master System Design
+Master CP
+GeeksforGeeks Videos
+Languages
+Python
+Java
+C++
+PHP
+GoLang
+SQL
+R Language
+Android Tutorial
+DSA
+Data Structures
+Algorithms
+DSA for Beginners
+Basic DSA Problems
+DSA Roadmap
+Top 100 DSA Interview Problems
+DSA Roadmap by Sandeep Jain
+All Cheat Sheets
+Data Science & ML
+Data Science With Python
+Data Science For Beginner
+Machine Learning Tutorial
+ML Maths
+Data Visualisation Tutorial
+Pandas Tutorial
+NumPy Tutorial
+NLP Tutorial
+Deep Learning Tutorial
+HTML & CSS
+HTML
+CSS
+Bootstrap
+Tailwind CSS
+SASS
+LESS
+Web Design
+Python
+Python Programming Examples
+Django Tutorial
+Python Projects
+Python Tkinter
+Web Scraping
+OpenCV Python Tutorial
+Python Interview Question
+Computer Science
+GATE CS Notes
+Operating Systems
+Computer Network
+Database Management System
+Software Engineering
+Digital Logic Design
+Engineering Maths
+DevOps
+Git
+AWS
+Docker
+Kubernetes
+Azure
+GCP
+DevOps Roadmap
+Competitive Programming
+Top DS or Algo for CP
+Top 50 Tree
+Top 50 Graph
+Top 50 Array
+Top 50 String
+Top 50 DP
+Top 15 Websites for CP
+System Design
+What is System Design
+Monolithic and Distributed SD
+High Level Design or HLD
+Low Level Design or LLD
+Crack System Design Round
+System Design Interview Questions
+Grokking Modern System Design
+JavaScript
+TypeScript
+ReactJS
+NextJS
+AngularJS
+NodeJS
+Express.js
+Lodash
+Web Browser
+NCERT Solutions
+Class 12
+Class 11
+Class 10
+Class 9
+Class 8
+Complete Study Material
+School Subjects
+Mathematics
+Physics
+Chemistry
+Biology
+Social Science
+English Grammar
+Commerce
+Accountancy
+Business Studies
+Indian Economics
+Macroeconomics
+Microeconimics
+Statistics for Economics
+Management & Finance
+Management
+HR Managament
+Income Tax
+Finance
+Economics
+UPSC Study Material
+Polity Notes
+Geography Notes
+History Notes
+Science and Technology Notes
+Economy Notes
+Ethics Notes
+Previous Year Papers
+SSC/ BANKING
+SSC CGL Syllabus
+SBI PO Syllabus
+SBI Clerk Syllabus
+IBPS PO Syllabus
+IBPS Clerk Syllabus
+SSC CGL Practice Papers
+Colleges
+Indian Colleges Admission & Campus Experiences
+Top Engineering Colleges
+Top BCA Colleges
+Top MBA Colleges
+Top Architecture College
+Choose College For Graduation
+Companies
+IT Companies
+Software Development Companies
+Artificial Intelligence(AI) Companies
+CyberSecurity Companies
+Service Based Companies
+Product Based Companies
+PSUs for CS Engineers
+Preparation Corner
+Company Wise Preparation
+Preparation for SDE
+Experienced Interviews
+Internship Interviews
+Competitive Programming
+Aptitude Preparation
+Puzzles
+Exams
+JEE Mains
+JEE Advanced
+GATE CS
+NEET
+UGC NET
+More Tutorials
+Software Development
+Software Testing
+Product Management
+SAP
+SEO
+Linux
+Excel
+Write & Earn
+Write an Article
+Improve an Article
+Pick Topics to Write
+Share your Experiences
+Internships
+@GeeksforGeeks, Sanchhaya Education Private Limited, All rights reserved
+We use cookies to ensure you have the best browsing experience on our 
